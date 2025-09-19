@@ -1,0 +1,23 @@
+num1 = int(input("Enter the first number: "))
+num2 = int(input("Enter the second number: "))
+
+operation = input("Choose the operation (+, -, *, /): ")
+
+match operation:
+    case "+":
+        addition = num1 + num2
+        print(f'The results is {addition}')
+    case "-":
+        subtraction = num1 - num2
+        print(f'The results is {subtraction}')
+    case "*":
+        multiplication = num1 * num2
+        print(f'The results is {multiplication}')
+    case "/":
+        if num2 == 0 or num1 == 0:
+            print("Cannot divide by zero.")
+        else:
+            division = num1 / num2
+            print(f'The results is {division}')
+    case _:
+        print("Invalid operator.")
