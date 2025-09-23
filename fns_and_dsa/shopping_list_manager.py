@@ -18,12 +18,12 @@ def main():
 
         if choice == '1':
             # Prompt for and add an item
-            item = input("Enter an item to be added to the shopping list: ")
+            item = input("Enter an item to be add: ")
             shopping_list.append(item)
 
         elif choice == '2':
             # Prompt for and remove an item
-            item = int(input("Enter an item number to be removed from the shopping list: "))
+            item = int(input("Enter an item number to be removed: "))
             del shopping_list[item + 1]
 
         elif choice == '3':
