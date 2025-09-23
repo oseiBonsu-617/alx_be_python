@@ -1,4 +1,4 @@
-def perform_operation(num1: float, num2: float, operation: str):
+def perform_operation(num1, num2 ,operation):
     possible_operation_values = ['add', 'subtract', 'multipy', 'divide']
 
     match operation:
