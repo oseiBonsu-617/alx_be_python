@@ -1,0 +1,16 @@
+def perform_operation(num1: float, num2: float, operation: str):
+    possible_operation_values = ['add', 'subtract', 'multipy', 'divide']
+
+    match operation:
+        case 'add':
+            return num1 + num2
+        case 'subtract':
+            return num1 - num2
+        case 'multiply':
+            return num1 * num2
+        case 'division':
+            if num2 == 0:
+                print('Cannot divide by zero.')
+                return
+            else:
+                return num1 / num2
