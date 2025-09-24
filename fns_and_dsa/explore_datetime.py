@@ -10,11 +10,11 @@ def display_current_datetime():
 
 display_current_datetime()
 
-user_input = int(input("Enter a number of days: "))
+number_of_days = int(input("Enter a number of days: "))
 
 def calculate_future_date():
     current_date = datetime.now()
-    future_date = current_date.date() - timedelta(user_input)
+    future_date = current_date.date() - timedelta(number_of_days)
     print(future_date)
 
 calculate_future_date()
