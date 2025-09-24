@@ -3,10 +3,18 @@ import time
 
 # dt = datetime.datetime.fromtimestamp(time.time())
 
+datetime.now()
+
+
+# def display_current_datetime():
+#     current_date = datetime.fromtimestamp(time.time())
+#     print(f'Current date and time: {current_date.year}-{current_date.month}-{current_date.day} {current_date.hour}:{current_date.minute}:{current_date.second}')
 
 def display_current_datetime():
-    current_date = datetime.fromtimestamp(time.time())
-    print(f'Current date and time: {current_date.year}-{current_date.month}-{current_date.day} {current_date.hour}:{current_date.minute}:{current_date.second}')
+    current_date = datetime.now()
+
+    formatted_date = current_date.strftime("%Y-%m-%d %H:%M:%S")
+    print(f'{formatted_date}')
 
 display_current_datetime()
 
