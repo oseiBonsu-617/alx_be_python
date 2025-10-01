@@ -15,9 +15,8 @@ match operation:
         print(f'The result is {multiplication}')
     case "/":
         if num2 == 0 or num1 == 0:
-            print("Cannot divide by zero.")
-        else:
-            division = num1 / num2
-            print(f'The result is {division}')
+            raise ZeroDivisionError("Division by zero is not allowed")    
+        division = num1 / num2
+        print(f'The result is {division}')
     case _:
         print("Invalid operator.")
