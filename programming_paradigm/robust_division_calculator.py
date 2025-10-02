@@ -1,6 +1,7 @@
 def safe_divide(numerator, denominator):
     try:
-        return float(numerator) / float(denominator)
+        reslts = float(numerator) / float(denominator)
+        return f"The result of the division is {reslts}"
     except ZeroDivisionError:
         return "Error: Cannot divide by zero."
     except ValueError:
